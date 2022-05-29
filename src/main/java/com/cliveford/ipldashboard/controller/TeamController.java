@@ -3,12 +3,15 @@ package com.cliveford.ipldashboard.controller;
 import com.cliveford.ipldashboard.model.Team;
 import com.cliveford.ipldashboard.repository.MatchRepository;
 import com.cliveford.ipldashboard.repository.TeamRepository;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
     private TeamRepository teamRepository;
